@@ -46,6 +46,11 @@ public class ThreeAndFiveTest {
 
 
     @Test
+    public void testWithLargeValue() {
+        assertEquals("((((((((1*5)*5+3)*5+3+3+3)*5+3)*5+3+3+3+3)*5)*5+3+3+3)*5)*5+3+3+3", t.decomposeRecursif(2345234));
+        assertEquals("((((((((1*5)*5+3)*5+3+3+3)*5+3)*5+3+3+3+3)*5)*5+3+3+3)*5)*5+3+3+3", t.decomposeIteratif(2345234));
+    }
+    @Test
     public void solutionIterativeCasImpossibles() {
         assertEquals("Pas de décomposition", t.decomposeIteratif(2));
         assertEquals("Pas de décomposition", t.decomposeIteratif(6));
