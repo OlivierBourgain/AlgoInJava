@@ -1,13 +1,11 @@
 package com.obourgain.algo.threeandfive;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
  * Given a number N, starting with number 1, you can only multiply the result by 5 or add 3 to the result.
  * If there's no way to get N through this method, return "Can't generate it".
- *
+ * <p/>
  * Voir http://stackoverflow.com/questions/17652190/how-to-get-the-target-number-with-3-or-5-operations-without-recursion
  */
 public class ThreeAndFive {

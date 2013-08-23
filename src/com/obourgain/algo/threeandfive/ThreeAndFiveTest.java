@@ -3,7 +3,6 @@ package com.obourgain.algo.threeandfive;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNull;
 
 /**
  * Date: 15/07/13
@@ -50,6 +49,7 @@ public class ThreeAndFiveTest {
         assertEquals("((((((((1*5)*5+3)*5+3+3+3)*5+3)*5+3+3+3+3)*5)*5+3+3+3)*5)*5+3+3+3", t.decomposeRecursif(2345234));
         assertEquals("((((((((1*5)*5+3)*5+3+3+3)*5+3)*5+3+3+3+3)*5)*5+3+3+3)*5)*5+3+3+3", t.decomposeIteratif(2345234));
     }
+
     @Test
     public void solutionIterativeCasImpossibles() {
         assertEquals("Pas de décomposition", t.decomposeIteratif(2));
