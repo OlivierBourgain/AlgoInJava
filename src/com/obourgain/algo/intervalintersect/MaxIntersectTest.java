@@ -6,9 +6,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Date: 23/08/13
- */
 public class MaxIntersectTest {
 
     @Test
@@ -61,6 +58,21 @@ public class MaxIntersectTest {
         list.add(new Interval(1, 5));
         list.add(new Interval(2, 4));
         Assert.assertEquals(2, new MaxIntersect().findMaxIntersect(list));
+    }
+
+    @Test
+    public void testIntervalleQuiSeSuivent() {
+        List<Interval> list = new ArrayList<>();
+        list.add(new Interval(1, 5));
+        list.add(new Interval(5, 6));
+        Assert.assertEquals(1, new MaxIntersect().findMaxIntersect(list));
+    }
+
+    @Test
+    public void testIntervalleDegenere() {
+        List<Interval> list = new ArrayList<>();
+        list.add(new Interval(1, 1));
+        Assert.assertEquals(0, new MaxIntersect().findMaxIntersect(list));
     }
 
 }

@@ -4,10 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
+ * Etant donné une liste d'intervalles [an, bn].
+ * Trouver le plus grand nombre Q tel qu'il existe un nombre qui appartient à Q intervalles.
  */
 public class MaxIntersect {
-
 
     public int findMaxIntersect(List<Interval> list) {
         int n = list.size();
